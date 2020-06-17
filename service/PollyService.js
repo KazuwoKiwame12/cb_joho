@@ -11,6 +11,9 @@ aws.config.update({
   region: process.env.AWS_DEFAULT_REGION
 })
 
+const test = 'aa'
+console.log(test)
+
 const polly = new aws.Polly({ region: process.env.AWS_DEFAULT_REGION })
 const params = {
   OutputFormat: 'mp3',
